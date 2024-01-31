@@ -1,38 +1,177 @@
+/* App.css */
+
 .App {
-  text-align: center;
+  font-family: Arial, sans-serif;
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 800px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2 {
+  margin-bottom: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+button {
+  padding: 8px 16px;
+  background-color: #007bff;
   color: white;
+  border: none;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background-color: #0056b3;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/* ShowList.css */
+
+.ShowList {
+  margin-top: 20px;
+}
+
+.ShowList ul {
+  padding: 0;
+}
+
+.ShowList li {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.ShowList li h3 {
+  margin-bottom: 5px;
+}
+
+.ShowList li button {
+  background-color: #28a745;
+}
+
+.ShowList li button:hover {
+  background-color: #218838;
+}
+
+/* ShowDetails.css */
+
+.ShowDetails {
+  margin-top: 20px;
+}
+
+.ShowDetails h3 {
+  margin-bottom: 10px;
+}
+
+.ShowDetails p {
+  margin-bottom: 20px;
+}
+
+.ShowDetails button {
+  background-color: #dc3545;
+}
+
+.ShowDetails button:hover {
+  background-color: #c82333;
+}
+/* ShowList.css */
+
+.ShowList {
+  margin-top: 20px;
+}
+
+.show-list-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.show-item {
+  width: calc(25% - 20px); /* Adjust the width according to your needs */
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.show-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.show-details {
+  margin-top: 10px;
+}
+
+.show-details h3 {
+  margin-bottom: 5px;
+}
+
+.show-details p {
+  font-size: 14px;
+}
+
+.show-details button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.show-details button:hover {
+  background-color: #0056b3;
+}
+/* ShowList.css */
+
+.ShowList {
+  margin-top: 20px;
+}
+
+.show-list-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 20px;
+}
+
+.show-card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.show-card img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.show-details h3 {
+  margin: 10px 0;
+}
+
+.show-details p {
+  margin-bottom: 10px;
+}
+
+.show-details button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.show-details button:hover {
+  background-color: #0056b3;
 }
